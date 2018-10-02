@@ -68,16 +68,6 @@ body .wrap .scale__img {
   position: relative;
 }
 
-body .wrap .scale__img #cnvs {
-  width: 270px;
-  height: 200px;
-  border: 1px solid red;
-  position: absolute;
-  top: -85px;
-  left: 36px;
-  display: none;
-}
-
 body .wrap .scale__img .hide {
   display: none;
 }
@@ -163,24 +153,5 @@ body .wrap .scale__img #figure-b_arrow {
   border-bottom: 2px solid #9C5D7C;
   -webkit-transform: matrix(1.2, 0, 0.9, 1.2, 50, 0) rotate(20deg);
   transform: matrix(1.2, 0, 0.9, 1.2, 50, 0) rotate(20deg);
-  border-bottom-right-radius: 3px;
-}
-
-body #oval {
-  width: 200px;
-  height: 100px;
-  background: red;
-  border-radius: 100px / 50px;
-}
-
-body #sqr {
-  margin-left: 20px;
-  margin-top: 20px;
-  width: 7px;
-  height: 7px;
-  border-right: 1.5px solid #9C5D7C;
-  border-bottom: 1.5px solid #9C5D7C;
-  -webkit-transform: matrix(1.1, 0, 0.9, 1.2, 50, 0) rotate(20deg);
-  transform: matrix(1.1, 0, 0.9, 1.2, 50, 0) rotate(20deg);
   border-bottom-right-radius: 3px;
 }
