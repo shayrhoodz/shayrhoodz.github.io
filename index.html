@@ -4,58 +4,187 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>ОСЬ - 2</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+  <title>RP_TEST</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
-  <div class="wrap">
-  
-    <div class="numbers">
-        <span class="a">7</span>
-        +
-        <span class="b">4</span>
-        =
-        <span class="aplusb">?</span>
-        <input class="hide" name="" id="aplusb_input">
-    </div>
-    <!-- /.numbers -->
+  <div class="container">
+    <div class="wrap">
 
-    <!-- цвет стрелки 9C5D7C -->
+      <div class="main-info">
 
-    <div class="scale">
+        <div class="main-info__text">
+          <span class="main-info__text_main">
+            Основная информация
+          </span>
+          Sed ut perspiciatis,
+          <a href="#">unde omnis iste</a>          
+          natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur.
+        </div>
+        <!-- /.main-info__text -->
 
-      <div class="scale__img">
-        <input class="hide" name="" id="inputa">
-        <span class="hide" id="inputa_text"></span>
-        <input class="hide" name="" id="inputb">
-        <span class="hide" id="inputb_text"></span>
-        <div class="hide" id="figure-a"></div>
-        <div class="hide" id="figure-a_arrow"></div>
-        <div class="hide" id="figure-b"></div>
-        <div class="hide" id="figure-b_arrow"></div>
-        <img src="./img/sprite.png" alt="линейка">
+        <form class="main-info__inputarea">          
+          <div class="main-info__inputarea-wrap">
+
+            <div class="main-info__inputarea-group">
+              <input class="main-info__inputarea-input" type="text" name="group" id="input_1" placeholder="Введите название" required>
+              <label for="input_1" class="main-info__inputarea_caption">
+                Название группы
+              </label>
+            </div>
+            <!-- /.main-info__inputarea-group -->
+
+            <div class="main-info__inputarea-name">
+              <input class="main-info__inputarea-input" type="text" name="name" id="input_2" placeholder="Введите название" value="" required>
+              <label for="input_2" class="main-info__inputarea_caption">
+                ФИО ответственного
+              </label>
+            </div>
+            <!-- /.main-info__inputarea-name -->
+            
+            <div class="main-info__inputarea-email">
+              <input class="main-info__inputarea-input" type="email" name="email" id="input_3" placeholder="Введите название" required>
+              <label for="input_3" class="main-info__inputarea_caption">
+                Email для входа
+              </label>            
+            </div>
+            <!-- /.main-info__inputarea-email -->
+
+          </div>
+          <!-- /.main-info__inputarea-wrap -->
+
+          <div class="main-info__inputarea-describ">
+            
+            <textarea class="main-info__inputarea-input main-info__inputarea-input_d" name="textarea" id="input_4" placeholder="Введите краткое и емкое описание для рабочей группы" required></textarea>
+            <label for="input_4" class="main-info__inputarea_caption">
+              Описание рабочей группы
+            </label>
+          
+          </div>
+          <!-- /.main-info__inputarea-describ -->
+
+          <div class="main-info__inputarea-buttons">
+
+            <input class="main-info__inputarea-buttons_sub" type="submit" value="Отправить">
+            <input class="main-info__inputarea-buttons_res" type="reset" value="Отмена">
+
+          </div>
+          <!-- /.main-info__inputarea-buttons -->
+
+        </form>
+        <!-- /.main-info__inputarea -->        
+        
       </div>
-      <!-- /.scale__img -->
-    
+      <!-- /.main-info -->
+      
+      <div class="notif-manag">
+        <span class="notif-manag__caption">
+          Управление уведомлениями
+        </span>
+        <!-- /.notif-manag__caption -->
+        
+        <div class="notif-manag__alert-message">
+            <span class="notif-manag__alert-message_warning">
+              Внимание!
+            </span>
+            <!-- /.notif-manag__alert-message_warning -->
+            Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam voluptatem.
+            <img src="./img/ico_1.svg" alt="Внимание">
+            <!-- <object data="./img/ico_1.svg" type=""></object> -->
+            
+        </div>
+        <!-- /.notif-manag__alert-message -->
+        
+        <div class="notif-manag__society">
+
+          <div class="notif-manag__society_messeng">
+
+            <div class="notif-manag__society_top notif-manag__society_top-telegram">
+              Telegram
+            </div>
+            <!-- /.notif-manag__society_top -->
+
+            <div class="notif-manag__society_bottom">
+
+            </div>
+            <!-- /.notif-manag__society_bottom -->
+
+
+          </div>
+          <!-- /.notif-manag__society_messeng -->
+
+          <div class="notif-manag__society_messeng">
+
+            <div class="notif-manag__society_top notif-manag__society_top-noonline notif-manag__society_top-icq">
+              ICQ
+            </div>
+            <!-- /.notif-manag__society_top -->
+
+            <div class="notif-manag__society_bottom">
+              <span class="notif-manag__society_bottom-descr">
+                1. Скопируйте команду авторизации
+              </span>
+              <span class="notif-manag__society_bottom-descr_1">
+                2. Перейдите в чат и отправьте команду боту
+              </span>
+            </div>
+            <!-- /.notif-manag__society_bottom -->
+
+
+          </div>
+          <!-- /.notif-manag__society_messeng -->
+
+          <div class="notif-manag__society_messeng">
+
+            <div class="notif-manag__society_top notif-manag__society_top-noonline notif-manag__society_top-skype">
+              Skype
+            </div>
+            <!-- /.notif-manag__society_top -->
+
+            <div class="notif-manag__society_bottom">
+              <span class="notif-manag__society_bottom-descr">
+                1. Скопируйте команду авторизации
+              </span>
+              <span class="notif-manag__society_bottom-descr_1">
+                2. Перейдите в чат и отправьте команду боту
+              </span>
+            </div>
+            <!-- /.notif-manag__society_bottom -->
+
+
+          </div>
+          <!-- /.notif-manag__society_messeng -->
+
+          <div class="notif-manag__society_messeng">
+
+            <div class="notif-manag__society_top notif-manag__society_top-slack">
+              Slack
+            </div>
+            <!-- /.notif-manag__society_top -->
+
+            <div class="notif-manag__society_bottom">
+
+            </div>
+            <!-- /.notif-manag__society_bottom -->
+
+
+          </div>
+          <!-- /.notif-manag__society_messeng -->
+
+        </div>
+        <!-- /.notif-manag__society -->
+
+        
+
+      </div>
+      <!-- /.notif-manag -->    
+
     </div>
-    <!-- /.scale -->
-
+    <!-- /.wrap -->
   </div>
-  <!-- /.wrap -->
-
-  <div id="oval">
-
-  </div>
-
-  <div id="sqr"></div>
-
-  
-
-  
-
-  <script src="./js/script.js"></script>
+  <!-- /.container -->
 
 </body>
 </html>

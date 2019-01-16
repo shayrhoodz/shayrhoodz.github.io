@@ -1,109 +1,251 @@
-body
-  // background-color: grey
-  // position: relative
-  input
-    font-family: 'Roboto', sans-serif
-    outline: none
-    border-radius: 5px
-    border: 2px solid gray
-    font-size: 20px
-    text-align: center
+*
   margin: 0
   font-family: 'Roboto', sans-serif
-  font-size: 36px 
+  color: #2c2c2c
+a, button, input, textarea
+  outline: none
+a
+  color: #2196f3
+button
+  cursor: pointer
+input, textarea
+  border: 0
+textarea
+  resize: none
+
+body
+  display: flex
+  justify-content: center
+.container
+  background-color: #606060
+  display: flex
+  justify-content: center
+  // align-items: center
+  // flex-direction: column
+  max-width: 1280px
+  width: 100%
+  // text-align: center
+  // padding-bottom: 100px
   .wrap
-    .numbers
-      margin-top: 50px
-      display: flex
-      justify-content: center
-      #aplusb_input
-        font-size: 36px
-        width: 40px
-        height: 35px
-        margin: 0px 10px
-      .hide
-        display: none
-      span
+    // padding-left: 38px
+    // padding: 104px 36px 0px 38px
+    background-color: #fff
+    box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.5)
+    max-width: 1152px
+    width: 100%
+    .main-info
+      margin: 104px 36px 0px 38px
+      // padding: 104px 36px 0px 38px
+      &__text
+        padding-right: 18px
+        font-size: 14px
+        // color: #2196f3
+        &_main
+          display: block
+          font-size: 18px
+          margin-bottom: 16px     
+      &__inputarea
+        // display: flex
+        // justify-content: space-between
+        margin-top: 30px
+        &-wrap
+          display: flex
+          justify-content: space-between
+        &-group, &-name, &-email, &-describ
+          border-radius: 4px
+          // background-color: #f7f7fa
+          // width: 339px
+          border-radius: 4px
+          font-size: 16px
+          position: relative
+          // background-color: #f7f7fa
+          // &:hover
+          //   background-color: #eaeaee
+        
+        &_caption
+          // opacity: 0.75
+          color: #27252a
+          font-size: 13px
+          position: absolute
+          top: 9px
+          left: 15px
+          // &:focus
+          //   color: blue
+        &-input
+          // background-color: transparent
+          width: 304px
+          // width: 100%
+          padding: 31px 17px 8px 17px
+          // margin-bottom: 10px
+          border-radius: 4px
+          font-size: 16px
+          background-color: #f7f7fa
+          &::placeholder
+            opacity: 0.4
+            color: #27252a
+          &:hover
+            background-color: #eaeaee
+          &:required
+            &~ label
+              opacity: 0.4
+              color: #27252a
+          &:placeholder-shown
+            &~ label
+              opacity: 1
+          &:focus
+            box-shadow: 0 0 0 3px rgba(70, 162, 252, 0.5)
+            border-radius: 4px
+            &~ label, label:active
+              opacity: 1
+              color: #2196f3
+          &_d
+            width: 1045px
+            margin-right: 36px
+            padding-bottom: 53px
+        &-describ
+          margin-top: 27px
+          // position: relative
+          // width: 100%
+          // textarea
+          //   width: 1045px
+          //   // color: red
+          //   padding: 31px 17px 53px 17px
+          //   border-radius: 4px
+          //   font-size: 16px
+          //   background-color: #f7f7fa
+          //   &::placeholder
+          //     opacity: 0.4
+          //     color: #27252a
+        &-buttons
+          margin-top: 27px
+          &_sub, &_res
+            width: 120px
+            padding: 10px 0 10px 0
+            border-radius: 4px
+            font-size: 16px
+            cursor: pointer
+          &_sub
+            color: white
+            box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.13)
+            background-image: linear-gradient(45deg, #00a1f9 0%, #008dfe 100%), linear-gradient(to top, #000000 0%, #ffffff 100%)
+            &:hover
+              // background-color: #0091e0
+              background-image: linear-gradient(45deg, #007fe5 0%, #007fe5 100%)
+              opacity: 0.9
+            &:focus
+              box-shadow: 0 0 0 3px rgba(70, 162, 252, 0.5), inset 0 0 0 rgba(0, 0, 0, 0.13)
+              // background-image: linear-gradient(45deg, #00a1f9 0%, #008dfe 100%), linear-gradient(to top, #000000 0%, #ffffff 100%)  
+              background-image: linear-gradient(45deg, #007fe5 0%, #007fe5 100%)
+          &_res
+            margin-left: 24px
+            background-color: #e5e9ef
+            &:hover
+              // opacity: 0.1
+              background-color: #d9dde3
+            &:focus
+              box-shadow: 0 0 0 3px rgba(229, 233, 239, 0.5)
+              background-color: #d9dde3
+    .notif-manag
+      margin: 101px 36px 0px 36px
+      &__caption
+        font-size: 18px
         display: block
-        padding: 0px 5px
-        margin: 0px 10px
-        // background-color: orange
-        border-radius: 5px
-    display: flex
-    justify-content: center
-    flex-direction: column
-    // .numbers
-    .scale
-      display: flex
-      justify-content: center
-      margin-top: 100px
-      &__img        
-        .hide
-          display: none
+        margin-bottom: 36px
+      &__alert-message
+        // margin-top: 36px
+        padding: 17px 36px 16px 108px
+        border-radius: 4px
+        background-image: linear-gradient(-205deg, #ff7da7 0%, #ffa3a4 100%)
         position: relative
-        #inputa
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2)
+        color: #ffffff
+        &_warning
+          font-size: 18px
+          text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2)
+          color: #ffffff
+        img
           position: absolute
-          width: 20px
-          height: 20px
-          top: -70px
-          left: 160px
-          &_text
-            position: absolute
-            font-size: 20px
-            width: 20px
-            height: 20px
-            top: -69px
-            left: 166px
-        #inputb
+          width: 34px
+          // height: 30px
+          top: 36px
+          left: 24px
+        &_warning
+          display: block
+          margin-bottom: 10px
+        &::before
+          content: ""
           position: absolute
-          width: 20px
-          height: 20px
-          top: -45px
-          left: 375px
-          &_text
+          width: 2px
+          height: 75px
+          background-image: linear-gradient(to right, #000001 0%, #ffffff 50%, #ffffff 100%)
+          left: 83px
+          top: 16px
+          opacity: 0.05
+      &__society
+        // width: 241px
+        height: 200px
+        margin-top: 61px
+        margin-bottom: 100px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        &_top
+          box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.09)
+          border: 8px solid #fcfcfc
+          background-color: #ffffff
+          font-size: 14px
+          text-align: center
+          padding-top: 32px
+          padding-bottom: 9px
+          position: relative
+          &::before
+            content: ""
             position: absolute
-            font-size: 20px
-            width: 20px
-            height: 20px
-            top: -44px
-            left: 381px
-        #figure-a, #figure-b
-          z-index: 10
-          position: absolute          
-          border: 2px solid
-          border-color: #9C5D7C transparent transparent transparent
-        #figure-a
-          width: 380px
-          height: 190px
-          border-radius: 190px 190px 0 0
-          left: -19px
-          top: -38px
-          &_arrow
-            position: absolute
-            left: 248px
-            top: 8px
-            width: 7px
-            height: 7px
-            border-right: 2px solid #9C5D7C
-            border-bottom: 2px solid #9C5D7C
-            transform: matrix(1.2,0,0.9,1.2,50,0) rotate(20deg)
-            border-bottom-right-radius: 3px
-        #figure-b
-          width: 220px
-          height: 110px
-          border-radius: 110px 110px 0 0
-          left: 274px
-          top: -14px   
-          &_arrow
-            position: absolute
-            left: 404px
-            top: 8px
-            width: 7px
-            height: 7px
-            border-right: 2px solid #9C5D7C
-            border-bottom: 2px solid #9C5D7C
-            transform: matrix(1.2,0,0.9,1.2,50,0) rotate(20deg)
-            border-bottom-right-radius: 3px 
-
-
-
+            top: 37px
+            left: 68px
+            width: 9px
+            height: 9px
+            background: url('../img/ico_online.png') center no-repeat
+          &-noonline
+            &::before
+              display: none
+            &::after
+              filter: grayscale(100%)
+          &-telegram, &-icq, &-skype, &-slack
+            position: relative
+            &::after
+              content: ""
+              position: absolute
+              top: -32px
+              left: 86px
+              width: 54px
+              height: 54px              
+          &-telegram
+            &::after
+              background: url('../img/telegram_small.png') center no-repeat
+          &-icq
+            &::after
+              background: url('../img/icq_small.png') center no-repeat              
+          &-skype
+            &::after
+              background: url('../img/skype_small.png') center no-repeat
+          &-slack
+            &::after
+              background: url('../img/slack_small.png') center no-repeat
+        &_bottom
+          border-radius: 0 0 4px 4px
+          background-color: #eaeaee
+          opacity: 0.5
+          width: 238px
+          height: 118px
+          margin-left: 2px
+          font-size: 13px
+          &-descr
+            display: block
+            padding-top: 24px
+            padding-left: 24px
+          &-descr_1
+            display: block
+            padding-top: 4px
+            padding-left: 24px
+            padding-right: 56px
