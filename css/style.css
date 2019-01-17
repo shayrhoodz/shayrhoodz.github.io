@@ -7,7 +7,8 @@
 a,
 button,
 input,
-textarea {
+textarea,
+button {
   outline: none;
 }
 
@@ -339,11 +340,15 @@ body {
   background: url("../img/skype_small.png") center no-repeat;
 }
 
+.container .wrap .notif-manag__society_top-slack::before {
+  left: 80px;
+}
+
 .container .wrap .notif-manag__society_top-slack::after {
   background: url("../img/slack_small.png") center no-repeat;
 }
 
-.container .wrap .notif-manag__society_bottom {
+.container .wrap .notif-manag__society_button {
   border-radius: 0 0 4px 4px;
   background-color: #eaeaee;
   opacity: 0.5;
@@ -353,15 +358,47 @@ body {
   font-size: 13px;
 }
 
-.container .wrap .notif-manag__society_bottom-descr {
+.container .wrap .notif-manag__society_button-descr,
+.container .wrap .notif-manag__society_button-descr_1 {
+  position: relative;
+}
+
+.container .wrap .notif-manag__society_button-descr a,
+.container .wrap .notif-manag__society_button-descr_1 a {
+  position: absolute;
+  right: 24px;
+  top: 29px;
+}
+
+.container .wrap .notif-manag__society_button-descr a img,
+.container .wrap .notif-manag__society_button-descr_1 a img {
+  opacity: 0.5;
+}
+
+.container .wrap .notif-manag__society_button-descr a img:hover,
+.container .wrap .notif-manag__society_button-descr_1 a img:hover {
+  opacity: 1.0;
+}
+
+.container .wrap .notif-manag__society_button-descr {
   display: block;
   padding-top: 24px;
   padding-left: 24px;
 }
 
-.container .wrap .notif-manag__society_bottom-descr_1 {
+.container .wrap .notif-manag__society_button-descr_1 {
   display: block;
   padding-top: 4px;
   padding-left: 24px;
   padding-right: 56px;
+}
+
+.container .wrap .notif-manag__society_button-descr_1 a {
+  top: 10px;
+}
+
+.container .wrap .notif-manag__society_button-btn {
+  font-size: 13px;
+  border-radius: 4px;
+  background-color: #fff;
 }

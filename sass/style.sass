@@ -2,7 +2,7 @@
   margin: 0
   font-family: 'Roboto', sans-serif
   color: #2c2c2c
-a, button, input, textarea
+a, button, input, textarea, button
   outline: none
 a
   color: #2196f3
@@ -230,9 +230,11 @@ body
             &::after
               background: url('../img/skype_small.png') center no-repeat
           &-slack
+            &::before              
+              left: 80px
             &::after
               background: url('../img/slack_small.png') center no-repeat
-        &_bottom
+        &_button
           border-radius: 0 0 4px 4px
           background-color: #eaeaee
           opacity: 0.5
@@ -240,6 +242,25 @@ body
           height: 118px
           margin-left: 2px
           font-size: 13px
+          &-descr, &-descr_1
+            position: relative
+            // &::after
+            //   content: ""
+            //   position: absolute
+            //   width: 15px
+            //   height: 18px
+            //   opacity: 0.5
+            //   right: 24px
+            //   top: 29px
+            //   background: url('../img/ico_new_window.png') center no-repeat
+            a
+              position: absolute
+              right: 24px
+              top: 29px
+              img
+                opacity: 0.5
+                &:hover
+                  opacity: 1.0
           &-descr
             display: block
             padding-top: 24px
@@ -249,3 +270,11 @@ body
             padding-top: 4px
             padding-left: 24px
             padding-right: 56px
+            a
+              top: 10px
+          &-btn
+            font-size: 13px
+            border-radius: 4px
+            background-color: ##e0e0e2
+            // border: 2px solid
+            // opacity: 0.08
