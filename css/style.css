@@ -360,6 +360,7 @@ body {
 
 .container .wrap .notif-manag__society_button-descr,
 .container .wrap .notif-manag__society_button-descr_1 {
+  display: block;
   position: relative;
 }
 
@@ -381,13 +382,11 @@ body {
 }
 
 .container .wrap .notif-manag__society_button-descr {
-  display: block;
   padding-top: 24px;
   padding-left: 24px;
 }
 
 .container .wrap .notif-manag__society_button-descr_1 {
-  display: block;
   padding-top: 4px;
   padding-left: 24px;
   padding-right: 56px;
